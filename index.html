@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="poopApp">
 <head>
     <meta charset="UTF-8">
     <title>iPoop</title>
@@ -8,12 +8,17 @@
     <!-- Firebase -->
     <script src="https://cdn.firebase.com/js/client/2.1.2/firebase.js"></script>
     <!-- AngularFire -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular-route.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.9.2/angularfire.min.js"></script>
     <!--css-->
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-<header class="header"></header>
+<header class="header">
+    <a href="/#/pageOne">one</a>
+    <a href="/#/pageTwo">two</a>
+    <a href="/#/pageThree">three</a>
+</header>
 
 <div>
     <ng-view></ng-view>

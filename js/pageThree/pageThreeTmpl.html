@@ -1,0 +1,23 @@
+
+<div>
+<form action="">
+
+    <div class="contain" ng-controller="pageThreeCtrl">
+        <p class="question">How did your stomach feel today?</p>
+        <div class="the-faces">
+            <input id="not-good" type="radio" name="faced" value="1" ng-model="newMessages"/>
+            <label class="faces not-good" for="not-good"></label>
+            <input id="ok" type="radio" name="faced" value="2"  ng-model="newMessages"/>
+            <label class="faces ok"for="ok"></label>
+            <input id="good" type="radio" name="faced" value="3" ng-model="newMessages"/>
+            <label class="faces good" for="good"></label>
+            <input id="great" type="radio" name="faced" value="4" ng-model="newMessages"/>
+            <label class="faces great" for="great"></label>
+        </div>
+
+        <button class="submit"  ng-click="stomachFun()">Submit</button>
+
+    </div>
+</form>
+
+    </div>

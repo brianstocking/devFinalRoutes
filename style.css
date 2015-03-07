@@ -2,10 +2,112 @@ html, body{
     height: 100%;
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
 }
 
 .header{
     height: 10%;
     width: 100%;
-    background: blue;
+    background: green;
+}
+
+.the-faces input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+.not-good{background-image:url(images/notgood.png);
+    height: 30px;
+    width: 30px;
+}
+.ok{background-image:url(images/ok.png);
+    height: 30px;
+    width: 30px;
+}
+
+.good{background: url(images/good.png);
+    height: 30px;
+    width: 30px;
+}
+.great{background: url(images/great.png);
+    height: 30px;
+    width: 30px;
+}
+
+
+.the-faces input:active + .faces{opacity: .9;}
+.the-faces input:checked + .faces{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+.faces{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.faces:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+.other input{
+    -webkit-appearance: none;
+}
+/* Extras */
+a:visited{color:#888}
+a{color:#444;text-decoration:none;}
+p{margin-bottom:.3em;}
+
+.contain{
+    width: 40%;
+    height: 20%;
+    text-align: center;
+}
+
+.submit{
+    margin: 10% 0 0 0;
+    height: 30px;
+    width: 33%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.question{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    margin-bottom: 10%;
+}
+
+.consistency{
+    display: inline-block;
+}
+
+.o1{
+    float: left;
+}
+
+.o2{
+    float: left;
+}
+
+.o3{
+    float: left;
+}
+
+.timesChoice{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    font-family: sans-serif;
 }
