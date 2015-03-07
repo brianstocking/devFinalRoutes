@@ -9,7 +9,7 @@ app.controller('pageThreeCtrl', function($rootScope, $scope, $firebase, mainServ
 
     $scope.stomachFun = function(){
         ref.set({
-            stomach: $scope.newMessages
+            stomach: $scope.newData
 
         })
     }

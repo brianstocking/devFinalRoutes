@@ -1,15 +1,18 @@
-<p>What was the consistency?</p>
-<div class="consistency" ng-controller="pageTwoCtrl">
 
-    <label for="con">milk</label>
-    <input id="con" ng-model="newMessages"  type="range" min="0" max="10" oninput="outputUpdate(value)"/>
-    <label for="con">metal</label><br/>
-    <output for="con" id="volume">5</output>
+<div>
+<p>What was the consistency?</p>
+<div class="consistency">
+
+    <label for="consistency">milk</label>
+    <input id="consistency" ng-model="newData"  type="range" min="0" max="10" oninput="outputUpdate(value)"/>
+    <label for="consistency">metal</label><br/>
+    <output for="consistency" id="volume">5</output>
     <script>
         function outputUpdate(vol) {
             document.querySelector('#volume').value = vol;
         }
     </script>
 
-    <button ng-click="conFun(newMessages)">submit</button>
+    <button ng-click="conFun(newData)">submit</button>
+</div>
 </div>

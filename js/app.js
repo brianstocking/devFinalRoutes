@@ -15,4 +15,12 @@ app.config(function ($routeProvider) {
             templateUrl: 'js/pageThree/pageThreeTmpl.html',
             controller: 'pageThreeCtrl'
         })
+        .when('/login',{
+            templateUrl: 'js/login/loginTmpl.html',
+            controller: 'loginCtrl'
+        })
+
+        .otherwise({
+            redirectTo: '/login'
+        })
 })

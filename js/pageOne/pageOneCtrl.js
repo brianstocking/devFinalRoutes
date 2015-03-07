@@ -6,7 +6,7 @@ app.controller('pageOneCtrl', function($scope, $firebase, mainService){
 
     $scope.timesFun = function(){
         ref.set({
-            times: $scope.newMessages
+            times: $scope.newData
         })
 
 
