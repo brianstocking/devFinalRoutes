@@ -20,6 +20,12 @@ app.config(function ($routeProvider) {
             controller: 'loginCtrl'
         })
 
+        .when('/charts', {
+            templateUrl: 'js/charts/chartTmpl.html',
+
+
+        })
+
         .otherwise({
             redirectTo: '/login'
         })
