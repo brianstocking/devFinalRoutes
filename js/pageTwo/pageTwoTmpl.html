@@ -1,12 +1,10 @@
 
-<p>What was the consistency?</p>
+<p class="question">What was the consistency?</p>
 
-<div ng-controller="pageTwoCtrl">
+<div ng-controller="pageTwoCtrl" >
 <div ng-repeat="i in selectorList"  class="consistency">
-    <label for="{{i.id}}">milk</label>
-    <input id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/>
-    <label for="{{i.id}}">metal</label><br/>
-    {{i.newData}}
+    <label for="{{i.id}}">milk</label><input id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/><label for="{{i.id}}">metal</label><br/>
+    {{i.newData}}<br/>
 </div>
     <button ng-click="conFun()"><a href="/#/pageThree">Submit</a></button>
 </div>

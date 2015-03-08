@@ -1,8 +1,8 @@
 
 <div ng-controller="pageOneCtrl">
-    <p>How many times did you today?</p>
+    <p class="question">How many times did you today?</p>
 
-
+ <div class="consistency">
     <select class="timesChoice" ng-model="numberTimes">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -12,7 +12,7 @@
         <option value="5">5</option>
     </select>
     <button ng-click="timesFun()"><a href="/#/pageTwo">submit</a></button>
-
+</div>
 
 
 
