@@ -1,17 +1,17 @@
 
 <div ng-controller="pageOneCtrl">
-    <p class="question">How many times did you today?</p>
 
  <div class="consistency">
-    <select class="timesChoice" ng-model="numberTimes">
+    <p class="question">How many times did you today?</p>
+    <select class="timesChoice" ng-model="numberTimes" style="height:50px;">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-    </select>
-    <button ng-click="timesFun()"><a href="/#/pageTwo">submit</a></button>
+    </select><br/>
+    <button class="submit" ng-click="timesFun()"><a href="/#/pageTwo">submit</a></button>
 </div>
 
 

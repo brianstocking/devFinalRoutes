@@ -1,5 +1,7 @@
 *{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    color: #E86229;
+    box-sizing: border-box;
 }
 
 html, body{
@@ -7,17 +9,18 @@ html, body{
     width: 100%;
     margin: 0;
     font-family: sans-serif;
+    background: #3E83FF;
 }
 .the-faces{
-    min-width: 240px;
+    min-width: 300px;
     margin: 10% 0 0 33%;
-    max-width: 240px;
+    max-width: 300px;
 }
 
 .header{
     height: 10%;
     width: 100%;
-    background: green;
+    background: #8636E8;
 }
 
 .the-faces input{
@@ -93,13 +96,15 @@ p{margin-bottom:.3em;}
     font-size: 20px;
     min-width: 80px;
     text-align: center;
+    background: #FFDD90;
+    border-radius: 5px;
+    box-shadow: 3px;
 
 }
 
 .question{
     font-family: sans-serif;
     font-size: 30px;
-    color: darkblue;
     margin-bottom: 10%;
     text-align: center;
 }
@@ -133,4 +138,53 @@ p{margin-bottom:.3em;}
     width: 33%;
     display: block;
     min-width: 212px;
+}
+
+@media screen and (max-width: 1000px){
+    .consistency{
+        width: 89%;
+        height: 50%;
+        margin: 10% 0 0 5%;
+    }
+
+    .question{
+        font-size: 80px;
+    }
+    .submit{
+        width: 33%;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .good{
+        height: 140px;
+        width: 140px;
+    }
+    .not-good{
+        height: 140px;
+        width: 140px;
+    }
+    .great{
+        height: 140px;
+        width: 140px;
+    }
+    .ok{
+        height: 140px;
+        width: 140px;
+    }
+    .the-faces{
+        width: 320px;
+
+    }
+
+    .timesChoice{
+        width: 33%;
+        margin: 30%;
+        height: 50px;
+        font-size: 50px;
+    }
+    select{
+        height: 50px;
+        line-height: 50px;
+    }
 }
