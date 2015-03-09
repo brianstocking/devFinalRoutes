@@ -7,15 +7,15 @@ app.controller('pageTwoCtrl', function($scope, $firebase, mainService){
 
 
     var ref = new Firebase("https://ipoop.firebaseio.com/"+ mainService.date +"/consistency");
-
+    var consistency = []
     $scope.conFun = function(){
         for(var i = 0; i < $scope.selectorList.length; i++) {
+         consistency.push($scope.selectorList[i].newData)
 
 
-            ref.push({ con: $scope.selectorList[i].newData
-            }
+        };
+            ref.set(consistency)
 
-        )};
 
 
 
