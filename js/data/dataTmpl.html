@@ -1,1 +1,14 @@
-{{data.stomach}}
+<div ng-controller="dataCtrl">
+    <div ng-repeat="item in data">
+        <h2>{{item.$id}}</h2>
+        <h4>Times</h4>
+            <p>{{item.times.times}}</p>
+
+        <ol>Consistency</ol>
+           <li type="1" ng-repeat="c in item.consistency"> movement consistency was {{c.value}}</li>
+        <h4>Stomach</h4>
+        <p>{{item.stomach.stomach}}</p>
+    </div>
+
+
+</div>
