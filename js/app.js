@@ -26,6 +26,11 @@ app.config(function ($routeProvider) {
 
         })
 
+        .when('/data', {
+            templateUrl: 'js/data/dataTmpl.html',
+            controller: 'dataCtrl'
+        })
+
         .otherwise({
             redirectTo: '/login'
         })

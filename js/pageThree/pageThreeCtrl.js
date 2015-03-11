@@ -13,4 +13,4 @@ app.controller('pageThreeCtrl', function($rootScope, $scope, $firebase, mainServ
 
         })
     }
-})
+});
