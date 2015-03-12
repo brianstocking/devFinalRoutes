@@ -1,4 +1,19 @@
-<div>
+<div ng-controller="loginCtrl">
 
-    Future Login Page
+  <div>
+    <h2>create account</h2>
+   <form ng-submit="createUser()">
+    <input type="text" ng-model="user.name"/>
+    <input type="password" ng-model="user.PW"/>
+       <button>submit</button>
+       </form>
+</div>
+    <h2>Login</h2>
+</div>
+<div>
+    <form ng-submit="loginUser()" >
+        <input type="text" ng-model="user.email"/>
+        <input type="password" ng-model="user.password"/>
+        <button>Login</button>
+    </form>
 </div>
