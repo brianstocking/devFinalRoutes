@@ -3,6 +3,7 @@ var app = angular.module('poopApp');
 app.service('loginService', function ($firebase) {
 
     var ref = new Firebase("https://ipoop.firebaseio.com");
+    this.user = userData.uid
     this.createUser = function (user) {
 
         ref.createUser({

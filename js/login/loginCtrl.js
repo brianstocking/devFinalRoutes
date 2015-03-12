@@ -2,7 +2,7 @@ var app = angular.module('poopApp');
 
 app.controller('loginCtrl', function($scope, loginService) {
     var ref = new Firebase("https://ipoop.firebaseio.com");
-    $scope.user ={}
+   $scope.user = loginService.user
     $scope.createUser = function() {
 
         loginService.createUser($scope.user)
