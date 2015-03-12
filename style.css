@@ -16,6 +16,19 @@ html, body{
     margin: 10% 0 0 33%;
     max-width: 300px;
 }
+ .dataContain{
+     margin: 10px 0 0 20px;
+     width: 300px;
+     border: 1px solid black;
+     padding: 10px;
+     color: white;
+
+ }
+
+ .dataSub{
+     margin: 0 0 0 20px;
+     color: white;
+ }
 
 .header{
     height: 10%;

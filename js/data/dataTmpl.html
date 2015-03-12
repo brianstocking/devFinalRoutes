@@ -1,14 +1,34 @@
 <div ng-controller="dataCtrl">
-    <div ng-repeat="item in data">
-        <h2>{{item.$id}}</h2>
-        <h4>Times</h4>
-            <p>{{item.times.times}}</p>
+    <div class="dataContain">
+        <div ng-repeat="item in data">
+            <h2>{{item.$id}}</h2>
+            <h4>Times</h4>
+                <p class="dataSub">the number of times went was {{item.times.times}}</p>
+            <h4>Consistency</h4>
+               <p  class="dataSub" ng-repeat="c in item.consistency"> movement consistency was {{c.value}}</p>
+            <h4>Stomach</h4>
+                <p class="dataSub">your stomach ranking was {{item.stomach.stomach}}</p>
 
-        <ol>Consistency</ol>
-           <li type="1" ng-repeat="c in item.consistency"> movement consistency was {{c.value}}</li>
-        <h4>Stomach</h4>
-        <p>{{item.stomach.stomach}}</p>
+<style>
+
+    .chart div {
+        font: 10px sans-serif;
+        background-color: steelblue;
+        text-align: right;
+        padding: 3px;
+        margin: 1px;
+        color: white;
+    }
+
+</style>
+<div class="chart">
+    <div style="width: ({{item.times.times}} * 10)px;">{{item.times.times}}</div>
+    <div style="width: 80px;">8</div>
+    <div style="width: 150px;">15</div>
+    <div style="width: 160px;">16</div>
+    <div style="width: 230px;">23</div>
+    <div style="width: 420px;">42</div>
+</div>
+        </div>
     </div>
-
-
 </div>
