@@ -3,10 +3,10 @@ var app = angular.module('poopApp')
 
 
 
-app.controller('pageTwoCtrl', function($scope, $firebase, mainService){
+app.controller('pageTwoCtrl', function($scope, $firebase, mainService, loginService){
+    var user = loginService.getUser();
+    var ref = new Firebase("https://ipoop.firebaseio.com/" + "user/" + user + '/' + mainService.date +"/consistency");
 
-
-    var ref = new Firebase("https://ipoop.firebaseio.com/"+ mainService.date +"/consistency");
     var consistency = {};
     var num_items = 0;
     $scope.conFun = function(){

@@ -3,9 +3,9 @@ var app = angular.module('poopApp')
 
 
 
-app.controller('pageThreeCtrl', function($rootScope, $scope, $firebase, mainService){
-
-    var ref = new Firebase("https://ipoop.firebaseio.com/" + mainService.date + "/stomach");
+app.controller('pageThreeCtrl', function($scope, $firebase, mainService, loginService){
+    var user = loginService.getUser();
+    var ref = new Firebase("https://ipoop.firebaseio.com/" + "user/" + user + '/' + mainService.date + "/stomach");
 
     $scope.stomachFun = function(){
         ref.set({
