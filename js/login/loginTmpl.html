@@ -1,21 +1,22 @@
-<div ng-controller="loginCtrl">
+<div ng-controller="loginCtrl" class="login">
 
-  <div>
-    <h2>create account</h2>
-   <form ng-submit="createUser()">
-    <input type="text" placeholder="email" ng-model="user.name"/>
-    <input type="password" placeholder="password" ng-model="user.PW"/>
-       <button>submit</button>
-       </form>
-</div>
-    <h2>Login</h2>
-</div>
-<div>
-    <form ng-submit="loginUser()" >
-        <input type="text" placeholder="email" ng-model="user.email"/>
-        <input type="password" placeholder="password" ng-model="user.password"/>
-        <button>Login</button>
-    </form>
+  <div >
+    <h1>Create Account</h1>
+       <form  ng-submit="createUser()">
+            <input class="loginInput" type="text" placeholder="email" ng-model="user.name"/>
+            <input class="loginInput" type="password" placeholder="password" ng-model="user.PW"/>
+            <button class="loginSubmit">submit</button>
+      </form>
+    </div>
 
+    <h1>Login</h1>
 
+    <div>
+        <form ng-submit="loginUser()" >
+            <input class="loginInput" type="text" placeholder="email" ng-model="user.email"/>
+            <input class="loginInput" type="password" placeholder="password" ng-model="user.password"/>
+            <button class="loginSubmit">Login</button>
+        </form>
+
+    </div>
 </div>

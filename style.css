@@ -1,5 +1,4 @@
 *{
-    /*border: 1px solid red;*/
     color: #E8A69D;
     box-sizing: border-box;
 }
@@ -272,3 +271,23 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
     background: #777;
     border-radius: 10px;
+}
+.login{
+    width: 33%;
+    height: 33%;
+    margin: 0 0 0 33%;
+}
+
+.loginInput{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.loginSubmit{
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #93FF98;
+}
