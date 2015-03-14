@@ -12,10 +12,10 @@ app.service('loginService', function ($firebase) {
         return key
     };
 
-    var addNewUsertoFB = function(newUser){
-        var key = FBEmail(newUser.email)
-        ref.child('user').child(key).set(newUser)
-    };
+    //var addNewUsertoFB = function(newUser){
+    //    var key = FBEmail(newUser.email)
+    //    ref.child('user').child(key).set(newUser)
+    //};
 
     this.createUser = function (user) {
 
@@ -27,7 +27,7 @@ app.service('loginService', function ($firebase) {
                 console.log("Error creating user:", error);
             } else {
                 console.log("Successfully created user account with uid:", userData.uid);
-                addNewUsertoFB({email: user.name});
+                //addNewUsertoFB({email: user.name});
             }
 
 
@@ -50,7 +50,8 @@ app.service('loginService', function ($firebase) {
     };
 
     this.getUser = function () {
-        return FBEmail(myUser)
+        console.log(ref.getAuth());
+        return FBEmail(ref.getAuth().password.email);
     }
 
     this.isAuth = function () {

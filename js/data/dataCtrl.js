@@ -1,9 +1,12 @@
 var app = angular.module('poopApp');
 
-app.controller('dataCtrl', function($scope, $firebase){
-    var ref = new Firebase('ipoop.firebaseio.com')
+app.controller('dataCtrl', function($scope, $firebase, loginService ){
+    var user = loginService.getUser();
 
-    var sync = $firebase(ref)
+
+    var ref = new Firebase('ipoop.firebaseio.com/');
+
+    var sync = $firebase(ref.child('user/' + user));
 
     $scope.data = sync.$asArray();
 
