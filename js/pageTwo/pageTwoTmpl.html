@@ -3,7 +3,7 @@
 
 <div ng-controller="pageTwoCtrl" >
 <div ng-repeat="i in selectorList"  class="consistency">
-    <label for="{{i.id}}">milk</label><input id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/><label for="{{i.id}}">metal</label><br/>
+    <label for="{{i.id}}">milk</label><input class="conSelector" id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/><label for="{{i.id}}">metal</label><br/>
     {{i.newData}}<br/>
 </div>
     <button class="submit" ng-click="conFun()"><a href="/#/pageThree">Submit</a></button>

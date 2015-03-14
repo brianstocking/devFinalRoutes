@@ -1,6 +1,6 @@
 *{
     /*border: 1px solid red;*/
-    color: #E86229;
+    color: #E8A69D;
     box-sizing: border-box;
 }
 
@@ -9,11 +9,11 @@ html, body{
     width: 100%;
     margin: 0;
     font-family: sans-serif;
-    background: #3E83FF;
+    background: #BCFFF5;
 }
 .the-faces{
     min-width: 300px;
-    margin: 10% 0 0 33%;
+    margin: 5% 0 0 33%;
     max-width: 300px;
 }
  .dataContain{
@@ -33,7 +33,7 @@ html, body{
 .header{
     height: 10%;
     width: 100%;
-    background: #8636E8;
+    background: #FF5550;
 }
 
 .the-faces input{
@@ -100,16 +100,15 @@ p{margin-bottom:.3em;}
 }
 
 
-
 .submit{
-    margin: 10% 0 0 33%;
+    margin: 5% 0 0 33%;
     height: 30px;
     width: 33%;
     font-family: sans-serif;
     font-size: 20px;
     min-width: 80px;
     text-align: center;
-    background: #FFDD90;
+    background: #93FF98;
     border-radius: 5px;
     box-shadow: 3px;
 
@@ -118,7 +117,7 @@ p{margin-bottom:.3em;}
 .question{
     font-family: sans-serif;
     font-size: 30px;
-    margin-bottom: 10%;
+    margin: 2% 0 5% 0;
     text-align: center;
 }
 
@@ -147,7 +146,7 @@ p{margin-bottom:.3em;}
 
 .consistency{
     margin: 5% 33% 0 33%;
-    height: 200px;
+    height: 150px;
     width: 33%;
     display: block;
     min-width: 212px;
@@ -156,12 +155,16 @@ p{margin-bottom:.3em;}
 @media screen and (max-width: 1000px){
     .consistency{
         width: 89%;
-        height: 50%;
-        margin: 10% 0 0 5%;
+        height: 25px;
+        margin: 5% 0 5% 33%;
+        border: 1px solid black;
+
     }
 
     .question{
         font-size: 80px;
+        border: 1px solid black;
+
     }
     .submit{
         width: 33%;
@@ -170,29 +173,29 @@ p{margin-bottom:.3em;}
     }
 
     .good{
-        height: 140px;
-        width: 140px;
+        height: 115px;
+        width: 115px;
     }
     .not-good{
-        height: 140px;
-        width: 140px;
+        height: 115px;
+        width: 115px;
     }
     .great{
-        height: 140px;
-        width: 140px;
+        height: 115px;
+        width: 115px;
     }
     .ok{
-        height: 140px;
-        width: 140px;
+        height: 115px;
+        width: 115px;
     }
     .the-faces{
-        width: 320px;
+        width: 290px;
 
     }
 
     .timesChoice{
         width: 33%;
-        margin: 30%;
+        margin: 15% 33% 5% 33%;
         height: 50px;
         font-size: 50px;
     }
@@ -201,3 +204,5 @@ p{margin-bottom:.3em;}
         line-height: 50px;
     }
 }
+
+

@@ -3,8 +3,8 @@
   <div>
     <h2>create account</h2>
    <form ng-submit="createUser()">
-    <input type="text" ng-model="user.name"/>
-    <input type="password" ng-model="user.PW"/>
+    <input type="text" placeholder="email" ng-model="user.name"/>
+    <input type="password" placeholder="password" ng-model="user.PW"/>
        <button>submit</button>
        </form>
 </div>
@@ -12,8 +12,8 @@
 </div>
 <div>
     <form ng-submit="loginUser()" >
-        <input type="text" ng-model="user.email"/>
-        <input type="password" ng-model="user.password"/>
+        <input type="text" placeholder="email" ng-model="user.email"/>
+        <input type="password" placeholder="password" ng-model="user.password"/>
         <button>Login</button>
     </form>
 
