@@ -12,46 +12,46 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
     $scope.firebaseData = sync.$asArray();
     $scope.firebaseData.$loaded().then(function(res){
-        //console.log($scope.firebaseData)
+        console.log($scope.firebaseData)
         $scope.data = {
-            series: ['Times'],
+            series: ['Times','stomach'],
             data: [{
                 x: [xData()[0]],
-                y:  [yData()[0]]
+                y:  [yData()[0], syData()[0]]
             } ,
                 {
                     x: [xData()[1]],
-                    y:  [yData()[1]]
+                    y:  [yData()[1], syData()[1]]
 
 
                 },
                 {
                     x: [xData()[2]],
-                    y:  [yData()[2]]
+                    y:  [yData()[2], syData()[2]]
 
 
                 },
                 {
                     x: [xData()[3]],
-                    y:  [yData()[3]]
+                    y:  [yData()[3], syData()[3]]
 
 
                 },
                 {
                     x: [xData()[4]],
-                    y:  [yData()[4]]
+                    y:  [yData()[4], syData()[4]]
 
 
                 },
                 {
                     x: [xData()[5]],
-                    y:  [yData()[5]]
+                    y:  [yData()[5], syData()[5]]
 
 
                 },
                 {
                     x: [xData()[6]],
-                    y:  [yData()[6]]
+                    y:  [yData()[6], syData()[6]]
 
 
                 },
@@ -79,16 +79,26 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
         return newXArray;
     }
 
+    function syData () {
+        var newSYArray = [];
+
+        for (var i = 0; i < $scope.firebaseData.length; i++) {
+            newSYArray.push(Number($scope.firebaseData[i].stomach.stomach))
+        }
+        //console.log(newSYArray);
+        return newSYArray;
+    }
+
 
 
     $scope.chartType = 'bar';
 
-    $scope.config1 = {
+    $scope.config = {
         labels: false,
         title: "iPoop",
         legend: {
             display: true,
-            position: 'left'
+            position: 'right'
         },
         innerRadius: 0
     };
