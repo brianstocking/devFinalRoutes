@@ -16,17 +16,8 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
         $scope.data = {
             series: ['Times'],
             data: [{
-                x: "times",
+                x: xData(),
                 y:  yData()
-
-                //function(){
-                //        for (var i = 0; i<$scope.data.length; i++){
-                //            $scope.data[i].times.times = Number($scope.data[i].times.times)
-                //        }
-                //        console.log($scope.data);
-                //
-                //    }
-                //
 
 
             } ]
@@ -34,41 +25,30 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
     })
     function yData () {
         var newArray = [];
-        //console.log($scope.firebaseData.length);
+
         for (var i = 0; i < $scope.firebaseData.length; i++) {
-            //console.log($scope.firebaseData[i].times.times);
             newArray.push(Number($scope.firebaseData[i].times.times))
         }
         console.log(newArray);
         return newArray;
     }
+    function xData () {
+        var newXArray = [];
 
-    //$scope.data = {
-    //        series: ['Times'],
-    //        data: [{
-    //            x: "times",
-    //            y:  yData()
-    //
-    //            //function(){
-    //            //        for (var i = 0; i<$scope.data.length; i++){
-    //            //            $scope.data[i].times.times = Number($scope.data[i].times.times)
-    //            //        }
-    //            //        console.log($scope.data);
-    //            //
-    //            //    }
-    //            //
-    //
-    //
-    //        } ]
-    //    };
-//console.log($scope.data.data[0].y)
+        for (var i = 0; i < $scope.firebaseData.length; i++) {
+            newXArray.push($scope.firebaseData[i].$id)
+        }
+        console.log(newXArray);
+        return newXArray;
+    }
+
 
 
         $scope.chartType = 'bar';
 
         $scope.config1 = {
             labels: false,
-            title: "Products",
+            title: "iPoop",
             legend: {
                 display: true,
                 position: 'left'
@@ -76,15 +56,29 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
             innerRadius: 0
         };
 
-        $scope.config2 = {
-            labels: false,
-            title: "HTML-enabled legend",
-            legend: {
-                display: true,
-                htmlEnabled: true,
-                position: 'right'
-            },
-            lineLegend: 'traditional'
-        }
 
 });
+//app.controller( 'chartCtrl',function($scope) {
+//    $scope.config = {
+//        title: 'Products',
+//        labels: false,
+//
+//        legend: {
+//            display: true,
+//            //could be 'left, right'
+//            position: 'right'
+//        }
+//    };
+//
+//    $scope.data = {
+//        series: ['Sales', 'Income', 'Expense'],
+//        data: [{
+//            x: "Laptops",
+//            y: [100, 500, 0],
+//        }, {
+//            x: "Desktops",
+//            y: [300, 100, 100]
+//        },
+//        ]
+//    };
+//})
