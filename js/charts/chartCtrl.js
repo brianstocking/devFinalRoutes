@@ -16,11 +16,42 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
         $scope.data = {
             series: ['Times'],
             data: [{
-                x: xData(),
-                y:  yData()
+                x: [xData()[0]],
+                y:  [yData()[0]]
+            } ,
+                {
+                    x: [xData()[1]],
+                    y:  [yData()[1]]
 
 
-            } ]
+                },
+                {
+                    x: [xData()[2]],
+                    y:  [yData()[2]]
+
+
+                },
+                {
+                    x: [xData()[3]],
+                    y:  [yData()[3]]
+
+
+                },
+                {
+                    x: [xData()[4]],
+                    y:  [yData()[4]]
+
+
+                },
+                {
+                    x: [xData()[5]],
+                    y:  [yData()[5]]
+
+
+                },
+
+
+            ]
         };
     })
     function yData () {
@@ -44,41 +75,18 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
 
 
-        $scope.chartType = 'bar';
+    $scope.chartType = 'bar';
 
-        $scope.config1 = {
-            labels: false,
-            title: "iPoop",
-            legend: {
-                display: true,
-                position: 'left'
-            },
-            innerRadius: 0
-        };
+    $scope.config1 = {
+        labels: false,
+        title: "iPoop",
+        legend: {
+            display: true,
+            position: 'left'
+        },
+        innerRadius: 0
+    };
 
 
 });
-//app.controller( 'chartCtrl',function($scope) {
-//    $scope.config = {
-//        title: 'Products',
-//        labels: false,
-//
-//        legend: {
-//            display: true,
-//            //could be 'left, right'
-//            position: 'right'
-//        }
-//    };
-//
-//    $scope.data = {
-//        series: ['Sales', 'Income', 'Expense'],
-//        data: [{
-//            x: "Laptops",
-//            y: [100, 500, 0],
-//        }, {
-//            x: "Desktops",
-//            y: [300, 100, 100]
-//        },
-//        ]
-//    };
-//})
+
