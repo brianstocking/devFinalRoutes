@@ -12,7 +12,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
     $scope.firebaseData = sync.$asArray();
     $scope.firebaseData.$loaded().then(function(res){
-        console.log($scope.firebaseData)
+        //console.log($scope.firebaseData)
         $scope.data = {
             series: ['Times'],
             data: [{
@@ -49,6 +49,12 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
 
                 },
+                {
+                    x: [xData()[6]],
+                    y:  [yData()[6]]
+
+
+                },
 
 
             ]
@@ -60,7 +66,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
         for (var i = 0; i < $scope.firebaseData.length; i++) {
             newArray.push(Number($scope.firebaseData[i].times.times))
         }
-        console.log(newArray);
+        //console.log(newArray);
         return newArray;
     }
     function xData () {
@@ -69,7 +75,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
         for (var i = 0; i < $scope.firebaseData.length; i++) {
             newXArray.push($scope.firebaseData[i].$id)
         }
-        console.log(newXArray);
+        //console.log(newXArray);
         return newXArray;
     }
 
