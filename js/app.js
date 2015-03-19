@@ -1,4 +1,4 @@
-var app = angular.module('poopApp',['ngRoute', 'firebase'])
+var app = angular.module('poopApp',['ngRoute', 'firebase','angularCharts'])
 
 app.config(function ($routeProvider) {
 
