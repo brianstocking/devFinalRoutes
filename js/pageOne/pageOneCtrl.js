@@ -4,13 +4,20 @@ app.controller('pageOneCtrl', function ($scope, $firebase, mainService, loginSer
     var user = loginService.getUser();
     var ref = new Firebase("https://ipoop.firebaseio.com/" + "user/" + user + '/' + mainService.date + "/times");
 
-    $scope.timesFun = function () {
-        ref.set({
-            times: $scope.numberTimes
-        });
-        mainService.setNumberTimes($scope.numberTimes);
 
-    };
-$scope.numberTimes = mainService.getNumberTimes();
+    $scope.setValue = function(value){
+        ref.set({
+            times: value
+        })
+        mainService.setNumberTimes(value);
+    }
+//    $scope.timesFun = function () {
+//        ref.set({
+//            times: $scope.numberTimes
+//        });
+//        mainService.setNumberTimes($scope.numberTimes);
+//
+//    };
+//$scope.numberTimes = mainService.getNumberTimes();
 
 });
