@@ -155,6 +155,7 @@ input[type=range]::-ms-fill-lower {
     margin-top: 10px;
     font-size: 12px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .loginStuff{
@@ -163,14 +164,55 @@ input[type=range]::-ms-fill-lower {
     min-width: 300px;
     margin: 40px auto;
 }
+
+.loginInputs{
+    height: 40px;
+    width: 80%;
+    margin: 10px;
+    font-size: 20px;
+}
+
 .loginSubmit{
     border-radius: 5px;
     background: #236B7F;
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
 }
 
+.timeButton{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #236B7F;
+    font-size: 20px;
+    box-shadow: none;
+}
+.timeText{
+    color: #4ABACC;
+    margin: auto;
+    text-align: center;
 
+}
+.timesContain{
+    width: 350px;
+    margin: 40px auto;
+}
+.question{
+    text-align: center;
+    font-size: 50px;
+}
+.buttonContain{
+    width: 150px;
+    margin: auto;
+}
 
 @media only screen and (max-device-width: 430px){
+    .appName{
+        font-size: 80px;
+        margin-top: 0;
+    }
 
     .loginStuff{
         height: 400px;
@@ -179,10 +221,11 @@ input[type=range]::-ms-fill-lower {
 
     .create{
         font-size: 150px;
+
     }
     .loginInputs{
-        height: 50px;
-        width: 60%;
+        height: 70px;
+        width: 80%;
         margin: 10px;
         font-size: 40px;
     }
@@ -190,13 +233,26 @@ input[type=range]::-ms-fill-lower {
         margin: 0 auto;
     }
     .loginSubmit{
-        height: 50px;
-        width: 120px;
-        font-size: 30px;
+        height: 70px;
+        width: 200px;
+        font-size: 40px;
         margin: 10px 0;
     }
     .toggler{
-        font-size: 20px;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .timeButton{
+        height: 120px;
+        width: 120px;
+        font-size: 60px;
+    }
+    .buttonContain{
+        width: 300px;
+        margin: auto;
+    }
+    .question{
+        font-size: 75px;
     }
 }
 
