@@ -1,5 +1,5 @@
 *{
-    color: #E8A69D;
+    color: #4ABACC;
     box-sizing: border-box;
 }
 
@@ -8,41 +8,15 @@ html, body{
     width: 100%;
     margin: 0;
     font-family: sans-serif;
-    background: #BCFFF5;
+    background: #DEF8FF;
 }
-.timesChoice{
-    margin: 10% 0 10% 33%;
-}
-.timesContain{
-    width: 33%;
-    height: 200px;
-    margin: 0 0 0 33%;
-}
-.the-faces{
-    min-width: 300px;
-    margin: 5% 0 0 33%;
-    max-width: 300px;
-}
- .dataContain{
-     margin: 10px 0 0 20px;
-     width: 300px;
-     border: 1px solid black;
-     padding: 10px;
-     color: white;
-
- }
-
- .dataSub{
-     margin: 0 0 0 20px;
-     color: white;
- }
-
 .header{
     height: 10%;
     width: 100%;
-    background: #FF5550;
+    background: #2F747F;
+    display: flex;
+    flex-direction: row;
 }
-
 .the-faces input{
     margin:0;padding:0;
     -webkit-appearance:none;
@@ -100,116 +74,13 @@ a:visited{color:#888}
 a{color:#444;text-decoration:none;}
 p{margin-bottom:.3em;}
 
-.contain{
-    width: 40%;
-    height: 20%;
-    text-align: center;
-}
 
 
-.submit{
+.the-faces{
+    min-width: 300px;
     margin: 5% 0 0 33%;
-    height: 30px;
-    width: 33%;
-    font-family: sans-serif;
-    font-size: 20px;
-    min-width: 80px;
-    text-align: center;
-    background: #93FF98;
-    border-radius: 5px;
-    box-shadow: 3px;
-
+    max-width: 300px;
 }
-
-.question{
-    font-family: sans-serif;
-    font-size: 30px;
-    margin: 2% 0 5% 0;
-    text-align: center;
-}
-
-.consistency{
-    display: inline-block;
-}
-
-.o1{
-    float: left;
-}
-
-.o2{
-    float: left;
-}
-
-.o3{
-    float: left;
-}
-
-.timesChoice{
-    width: 100px;
-    height: 20px;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.consistency{
-    margin: 5% 0 0 33%;
-    height: 150px;
-    width: 33%;
-    display: block;
-    min-width: 212px;
-}
-
-@media screen and (max-width: 1000px){
-    .consistency{
-        width: 89%;
-        height: 25px;
-        margin: 5% 0 5% 25%;
-
-    }
-
-    .question{
-        font-size: 80px;
-
-    }
-    .submit{
-        width: 33%;
-        height: 60px;
-        font-size: 50px;
-    }
-
-    .good{
-        height: 115px;
-        width: 115px;
-    }
-    .not-good{
-        height: 115px;
-        width: 115px;
-    }
-    .great{
-        height: 115px;
-        width: 115px;
-    }
-    .ok{
-        height: 115px;
-        width: 115px;
-    }
-    .the-faces{
-        width: 290px;
-
-    }
-
-    .timesChoice{
-        width: 33%;
-        margin: 15% 33% 5% 33%;
-        height: 50px;
-        font-size: 50px;
-    }
-    select{
-        height: 50px;
-        line-height: 50px;
-    }
-}
-
 input[type=range] {
     /*removes default webkit styles*/
     -webkit-appearance: none;
@@ -280,25 +151,239 @@ input[type=range]::-ms-fill-lower {
     background: #777;
     border-radius: 10px;
 }
-.login{
-    width: 33%;
-    height: 33%;
-    margin: 0 0 0 33%;
+.toggler{
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-.loginInput{
-    height: 30px;
-    width: 150px;
-    border-radius: 5px;
+.loginStuff{
+    height: 30%;
+    width: 40%;
+    min-width: 300px;
+    margin: 40px auto;
 }
-
 .loginSubmit{
-    height: 30px;
-    width: 90px;
     border-radius: 5px;
-    font-size: 18px;
-    background: #93FF98;
+    background: #236B7F;
 }
 
 
 
+@media only screen and (max-device-width: 430px){
+
+    .loginStuff{
+        height: 400px;
+        width: 80%;
+    }
+
+    .create{
+        font-size: 150px;
+    }
+    .loginInputs{
+        height: 50px;
+        width: 60%;
+        margin: 10px;
+        font-size: 40px;
+    }
+    .loginContain{
+        margin: 0 auto;
+    }
+    .loginSubmit{
+        height: 50px;
+        width: 120px;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .toggler{
+        font-size: 20px;
+    }
+}
+
+/*.timesChoice{*/
+    /*margin: 10% 0 10% 33%;*/
+/*}*/
+/*.timesContain{*/
+    /*width: 33%;*/
+    /*height: 200px;*/
+    /*margin: 0 0 0 33%;*/
+/*}*/
+ /*.dataContain{*/
+     /*margin: 10px 0 0 20px;*/
+     /*width: 300px;*/
+     /*border: 1px solid black;*/
+     /*padding: 10px;*/
+     /*color: white;*/
+
+ /*}*/
+
+ /*.dataSub{*/
+     /*margin: 0 0 0 20px;*/
+     /*color: white;*/
+ /*}*/
+
+/*.headerChild{*/
+    /*margin: auto;*/
+/*}*/
+
+/*.contain{*/
+    /*width: 40%;*/
+    /*height: 20%;*/
+    /*text-align: center;*/
+/*}*/
+
+
+/*.submit{*/
+    /*margin: 5% 0 0 33%;*/
+    /*height: 30px;*/
+    /*width: 33%;*/
+    /*font-family: sans-serif;*/
+    /*font-size: 20px;*/
+    /*min-width: 80px;*/
+    /*text-align: center;*/
+    /*background: #236B7F;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 3px;*/
+
+/*}*/
+
+/*.question{*/
+    /*font-family: sans-serif;*/
+    /*font-size: 20px;*/
+    /*margin: 2% 0 5% 0;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.consistency{*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.o1{*/
+    /*float: left;*/
+/*}*/
+
+/*.o2{*/
+    /*float: left;*/
+/*}*/
+
+/*.o3{*/
+    /*float: left;*/
+/*}*/
+
+/*.timesChoice{*/
+    /*width: 100px;*/
+    /*height: 20px;*/
+    /*text-align: center;*/
+    /*font-family: sans-serif;*/
+/*}*/
+
+/*.consistency{*/
+    /*margin: 5% 0 0 33%;*/
+    /*height: 150px;*/
+    /*width: 33%;*/
+    /*display: block;*/
+    /*min-width: 212px;*/
+/*}*/
+
+/*@media screen and (max-width: 420px){*/
+    /*.consistency{*/
+        /*width: 89%;*/
+        /*height: 25px;*/
+        /*margin: 5% 0 5% 25%;*/
+
+    /*}*/
+
+    /*.question{*/
+        /*font-size: 40px;*/
+        /*text-justify: auto;*/
+
+    /*}*/
+    /*.submit{*/
+        /*width: 33%;*/
+        /*height: 60px;*/
+        /*font-size: 50px;*/
+    /*}*/
+
+    /*.good{*/
+        /*height: 115px;*/
+        /*width: 115px;*/
+    /*}*/
+    /*.not-good{*/
+        /*height: 115px;*/
+        /*width: 115px;*/
+    /*}*/
+    /*.great{*/
+        /*height: 115px;*/
+        /*width: 115px;*/
+    /*}*/
+    /*.ok{*/
+        /*height: 115px;*/
+        /*width: 115px;*/
+    /*}*/
+    /*.the-faces{*/
+        /*width: 290px;*/
+
+    /*}*/
+
+    /*.timesChoice{*/
+        /*width: 33%;*/
+        /*margin: 15% 33% 5% 33%;*/
+        /*height: 50px;*/
+        /*font-size: 50px;*/
+    /*}*/
+    /*select{*/
+        /*height: 50px;*/
+        /*line-height: 50px;*/
+    /*}*/
+/*}*/
+
+/*.login{*/
+    /*width: 33%;*/
+    /*height: 33%;*/
+    /*margin: 0 0 0 33%;*/
+
+/*}*/
+
+/*.loginInput{*/
+    /*height: 30px;*/
+    /*width: 150px;*/
+    /*border-radius: 5px;*/
+/*}*/
+
+/*.loginSubmit{*/
+    /*height: 30px;*/
+    /*width: 90px;*/
+    /*border-radius: 5px;*/
+    /*font-size: 18px;*/
+    /*background: #236B7F;*/
+/*}*/
+
+/*.text{*/
+    /*font-size: 12px;*/
+/*}*/
+/*.g{*/
+    /*fill:black;*/
+/*}*/
+
+/*.timeButton{*/
+    /*background: #4AB0CC;*/
+    /*border-radius: 5px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*margin: 10px;*/
+    /*color: white;*/
+    /*font-size: 20px;*/
+/*}*/
+
+/*a{*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+/*}*/
+
+/*.buttonContain{*/
+    /*margin-top: 20px;*/
+    /*width: 150px;*/
+/*}*/
+/*.faceLabel{*/
+/*margin: 10px 0 0 20px;*/
+/*}*/

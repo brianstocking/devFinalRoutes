@@ -20,8 +20,8 @@ app.service('loginService', function ($firebase) {
     this.createUser = function (user) {
 
         ref.createUser({
-            email: user.name,
-            password: user.PW,
+            email: user.email,
+            password: user.password,
         }, function (error, userData) {
             if (error) {
                 console.log("Error creating user:", error);
@@ -52,7 +52,7 @@ app.service('loginService', function ($firebase) {
     this.getUser = function () {
         console.log(ref.getAuth());
         return FBEmail(ref.getAuth().password.email);
-    }
+    };
 
     this.isAuth = function () {
         var authData = ref.getAuth();

@@ -1,22 +1,23 @@
 <div ng-controller="loginCtrl" class="login">
-
-  <div >
-    <h1>Create Account</h1>
-       <form  ng-submit="createUser()">
-            <input class="loginInput" type="text" placeholder="email" ng-model="user.name"/>
-            <input class="loginInput" type="password" placeholder="password" ng-model="user.PW"/>
+    <div class="loginStuff" ng-show="showRegister">
+       <form class="loginContain" ng-submit="createUser()">
+        <h1 class="create">Create Account</h1>
+           <input class="loginInputs" type="text" placeholder="email" ng-model="user.email"/><br/>
+           <input class="loginInputs" type="password" placeholder="password" ng-model="user.password"/><br/>
             <button class="loginSubmit">submit</button>
       </form>
+    <p class="toggler" ng-click="toggleRegister()">Back to Login</p>
     </div>
 
-    <h1>Login</h1>
+    <div class="loginStuff" ng-show="!showRegister">
+    <form class="loginContain" ng-submit="loginUser()" >
+    <h1 class="create">Login</h1>
+        <input class="loginInputs" type="text" placeholder="email" ng-model="user.email"/><br/>
+        <input class="loginInputs" type="password" placeholder="password" ng-model="user.password"/><br/>
+        <button class="loginSubmit">Login</button>
 
-    <div>
-        <form ng-submit="loginUser()" >
-            <input class="loginInput" type="text" placeholder="email" ng-model="user.email"/>
-            <input class="loginInput" type="password" placeholder="password" ng-model="user.password"/>
-            <button class="loginSubmit">Login</button>
-        </form>
+    </form>
+    <p class="toggler" ng-click="toggleRegister()">Create Account</p>
 
-    </div>
+</div>
 </div>
