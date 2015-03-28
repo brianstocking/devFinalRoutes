@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39215ff5-cee1-47ad-b2d2-7e745eebcb69" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/good.png" afterPath="$PROJECT_DIR$/images/good.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/great.png" afterPath="$PROJECT_DIR$/images/great.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/notgood.png" afterPath="$PROJECT_DIR$/images/notgood.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/ok.png" afterPath="$PROJECT_DIR$/images/ok.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pageThree/pageThreeTmpl.html" afterPath="$PROJECT_DIR$/js/pageThree/pageThreeTmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pageTwo/pageTwoTmpl.html" afterPath="$PROJECT_DIR$/js/pageTwo/pageTwoTmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="devFinalRoutes.iws" />
@@ -48,7 +41,7 @@
           <file leaf-file-name="pageThreeTmpl.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/pageThree/pageThreeTmpl.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6066176" vertical-offset="0" max-vertical-offset="544">
+                <state vertical-scroll-proportion="1.01227" vertical-offset="0" max-vertical-offset="495">
                   <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
                   <folding />
                 </state>
@@ -112,7 +105,7 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="3.2024648" vertical-offset="4165" max-vertical-offset="9316">
+                <state vertical-scroll-proportion="5.197143" vertical-offset="4165" max-vertical-offset="9316">
                   <caret line="352" column="17" selection-start-line="352" selection-start-column="17" selection-end-line="352" selection-end-column="17" />
                   <folding />
                 </state>
@@ -372,10 +365,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="23" width="1400" height="819" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1824417" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4814815" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -801,7 +794,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2024648" vertical-offset="4165" max-vertical-offset="9316">
+        <state vertical-scroll-proportion="5.197143" vertical-offset="4165" max-vertical-offset="9316">
           <caret line="352" column="17" selection-start-line="352" selection-start-column="17" selection-end-line="352" selection-end-column="17" />
           <folding />
         </state>
@@ -817,7 +810,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/pageThree/pageThreeTmpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6066176" vertical-offset="0" max-vertical-offset="544">
+        <state vertical-scroll-proportion="1.01227" vertical-offset="0" max-vertical-offset="495">
           <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
         </state>
