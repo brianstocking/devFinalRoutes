@@ -18,27 +18,27 @@ html, body{
     flex-direction: row;
 }
 .the-faces input{
-    margin:0;padding:0;
+    margin:auto;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
 }
 .not-good{background-image:url(images/notgood.png);
-    height: 30px;
-    width: 30px;
+    height: 120px;
+    width: 120px;
 }
 .ok{background-image:url(images/ok.png);
-    height: 30px;
-    width: 30px;
+    height: 120px;
+    width: 120px;
 }
 
 .good{background: url(images/good.png);
-    height: 30px;
-    width: 30px;
+    height: 120px;
+    width: 120px;
 }
 .great{background: url(images/great.png);
-    height: 30px;
-    width: 30px;
+    height: 120px;
+    width: 120px;
 }
 
 
@@ -53,13 +53,15 @@ html, body{
     background-size:contain;
     background-repeat:no-repeat;
     display:inline-block;
-    width:100px;height:70px;
+    width:110px;
+    height:110px;
     -webkit-transition: all 100ms ease-in;
     -moz-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
     -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
     -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
     filter: brightness(1.8) grayscale(1) opacity(.7);
+    margin-left: 35px;
 }
 .faces:hover{
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
@@ -72,14 +74,14 @@ html, body{
 /* Extras */
 a:visited{color:#888}
 a{color:#444;text-decoration:none;}
-p{margin-bottom:.3em;}
 
 
 
 .the-faces{
-    min-width: 300px;
+    min-width: 350px;
     margin: 5% 0 0 33%;
-    max-width: 300px;
+    max-width: 350px;
+    margin: auto;
 }
 input[type=range] {
     /*removes default webkit styles*/
@@ -90,9 +92,10 @@ input[type=range] {
 
     /*required for proper track sizing in FF*/
     width: 300px;
+    margin-left: 25px;
 }
 input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
+    width: 250px;
     height: 50px;
     background: #ddd;
     border: none;
@@ -114,7 +117,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-moz-range-track {
-    width: 300px;
+    width: 250px;
     height: 5px;
     background: #ddd;
     border: none;
@@ -178,6 +181,7 @@ input[type=range]::-ms-fill-lower {
     height: 30px;
     width: 60px;
     margin-left: 10px;
+    text-align: center;
 }
 
 .timeButton{
@@ -208,6 +212,69 @@ input[type=range]::-ms-fill-lower {
     margin: auto;
 }
 
+.conTop{
+    width: 350px;
+    margin: 20px auto;
+}
+
+.details{
+    text-align: center;
+}
+.wholeCon{
+    width: 350px;
+    min-width: 350px;
+    margin: auto;
+}
+.consistency{
+    width: 350px;
+    margin: 20px auto;
+}
+
+.conLabelOne{
+    position: absolute;
+    margin: 60px 0 0 30px ;
+}
+
+.conLabelTwo{
+    position: absolute;
+    margin: 0 0 15px 305px ;
+}
+.conIndicator{
+    position: absolute;
+    font-size: 30px;
+    margin: 30px 0 0 -10px;
+}
+
+
+.conSubmit{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 125px;
+    background: #236B7F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+.submitLink{
+    text-decoration: none;
+    color: #4ABACC;
+    background: #236B7F;
+}
+
+.appName{
+    padding: 0 0 0 15px;
+}
+.conQuestion{
+    margin:10px auto;
+    text-align: center;
+}
+
+.stomachContain{
+    width: 350px;
+    margin: auto;
+}
 @media only screen and (max-device-width: 430px){
     .appName{
         font-size: 80px;
@@ -253,6 +320,37 @@ input[type=range]::-ms-fill-lower {
     }
     .question{
         font-size: 75px;
+    }
+    .conIndicator{
+        font-size: 50px;
+        margin: 20px 0 0 -33px;
+    }
+    .conLabelOne{
+        font-size: 30px;
+
+    }
+    .conLabelTwo{
+        font-size: 30px;
+    }
+
+    .conQuestion{
+        margin: 30px 0 0 20px;
+        font-size: 25px;
+    }
+    .details{
+        font-size: 30px;
+    }
+
+    .conSubmit{
+        height: 70px;
+        width: 50%;
+        font-size: 45px;
+        margin-left:25% ;
+    }
+    .faces{
+        height: 150px;
+        width: 150px;
+        margin: 9px;
     }
 }
 

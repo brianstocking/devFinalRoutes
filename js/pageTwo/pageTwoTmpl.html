@@ -1,11 +1,14 @@
 
-<p class="question">What was the consistency?</p>
+<p class="conTop question">What was the consistency?</p>
+<p class="conTop details">On a scale of 1-10, 1 being extremely soft and 10 being extremely hard, with 5 being optimal</p>
 
-<div ng-controller="pageTwoCtrl" >
+<div ng-controller="pageTwoCtrl" class="wholeCon" >
 <div ng-repeat="i in selectorList"  class="consistency">
-    <label for="{{i.id}}">milk</label><input class="conSelector" id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/><label for="{{i.id}}">metal</label><br/>
-   {{i.newData}}<br/>
-    <p>What was the consistency of your {{$index + 1}} movement?</p>
+   <span class="conIndicator">{{i.newData}}</span><br/>
+
+    <p class="conLabelOne">1</p><input class="conSelector" id="{{i.id}}" ng-model="i.newData" type="range" min="0" max="10"/><p class="conLabelTwo" for="{{i.id}}">10</p><br/>
+  <br/>
+    <p class="conQuestion">What was the consistency of your number {{$index + 1}} movement?</p>
 </div>
-    <button class="submit" ng-click="conFun()"><a href="/#/pageThree">Submit</a></button>
+    <button class="conSubmit" ng-click="conFun()"><a class="submitLink" href="/#/pageThree">Submit</a></button>
 </div>
