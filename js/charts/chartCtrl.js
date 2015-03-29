@@ -62,7 +62,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
     })
     function yData () {
         var newArray = [];
-        if($scope.firebaseData.length > 7) {
+        if($scope.firebaseData.length >= 7) {
 
 
             for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
@@ -70,7 +70,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
             }
         }else{
                 for(var i = 0; i < $scope.firebaseData.length; i++)
-                    newArray.push($scope.firebaseData[i].times.times)
+                    newArray.push(Number($scope.firebaseData[i].times.times))
 
             }
         //console.log(newArray);
@@ -78,7 +78,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
     }
     function xData () {
         var newXArray = [];
-        if($scope.firebaseData.length > 7) {
+        if($scope.firebaseData.length >= 7) {
 
             for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
                 newXArray.push($scope.firebaseData[i].$id)
@@ -94,7 +94,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
     function syData () {
         var newSYArray = [];
-        if($scope.firebaseData.length > 7) {
+        if($scope.firebaseData.length >= 7) {
 
 
             for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
@@ -102,7 +102,7 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
             }
         }else{
             for(var i = 0; i < $scope.firebaseData.length; i++)
-            newSYArray.push($scope.firebaseData[i].stomach.stomach)
+            newSYArray.push(Number($scope.firebaseData[i].stomach.stomach))
 
         }
         //console.log(newSYArray);
