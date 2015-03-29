@@ -62,18 +62,31 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
     })
     function yData () {
         var newArray = [];
+        if($scope.firebaseData.length > 7) {
 
-        for (var i =  $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
-            newArray.push(Number($scope.firebaseData[i].times.times))
-        }
+
+            for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
+                newArray.push(Number($scope.firebaseData[i].times.times))
+            }
+        }else{
+                for(var i = 0; i < $scope.firebaseData.length; i++)
+                    newArray.push($scope.firebaseData[i].times.times)
+
+            }
         //console.log(newArray);
         return newArray;
     }
     function xData () {
         var newXArray = [];
+        if($scope.firebaseData.length > 7) {
 
-        for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
+            for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
+                newXArray.push($scope.firebaseData[i].$id)
+            }
+        }else{
+            for(var i = 0; i < $scope.firebaseData.length; i++)
             newXArray.push($scope.firebaseData[i].$id)
+
         }
         //console.log(newXArray);
         return newXArray;
@@ -81,9 +94,16 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
 
     function syData () {
         var newSYArray = [];
+        if($scope.firebaseData.length > 7) {
 
-        for (var i =  $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
-            newSYArray.push(Number($scope.firebaseData[i].stomach.stomach))
+
+            for (var i = $scope.firebaseData.length - 7; i < $scope.firebaseData.length; i++) {
+                newSYArray.push(Number($scope.firebaseData[i].stomach.stomach))
+            }
+        }else{
+            for(var i = 0; i < $scope.firebaseData.length; i++)
+            newSYArray.push($scope.firebaseData[i].stomach.stomach)
+
         }
         //console.log(newSYArray);
         return newSYArray;

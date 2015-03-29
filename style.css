@@ -349,7 +349,7 @@ input[type=range]::-ms-fill-lower {
     }
     .faces{
         height: 150px;
-        width: 150px;
+        width: 130px;
         margin: 9px;
     }
 }
