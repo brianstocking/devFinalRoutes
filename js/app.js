@@ -41,7 +41,7 @@ app.config(function ($routeProvider) {
         })
 
         .otherwise({
-            redirectTo: '/data'
+            redirectTo: '/charts'
         })
 
 });

@@ -1,7 +1,9 @@
 
 <div ng-controller="dataCtrl">
     <div class="dataContain">
-<button class="pageLink dataLink"><a class="submitLink" href="/#/charts">Chart</a></button>
+        <button class="pageLink dataLink"><a class="submitLink" href="/#/charts">See Chart</a></button>
+        <button class="pageLink dataLink"><a class="submitLink " href="/#/pageOne">Log Data</a></button>
+
             <div ng-repeat="(index, item) in data">
                 <h2  class="dataDate" ng-click="toggleData(i.id)">{{item.$id}}</h2>
                     <div ng-show="showData" id="{{i.id}}">

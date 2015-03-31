@@ -431,7 +431,12 @@ input[type=range]::-ms-fill-lower {
     .dataLink{
         font-size: 60px;
     }
-
+    .header{
+        height: 100px;
+    }
+    .pageLink{
+        width: 200px;
+    }
 
 }
 
