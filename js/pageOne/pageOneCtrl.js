@@ -11,13 +11,6 @@ app.controller('pageOneCtrl', function ($scope, $firebase, mainService, loginSer
         })
         mainService.setNumberTimes(value);
     }
-//    $scope.timesFun = function () {
-//        ref.set({
-//            times: $scope.numberTimes
-//        });
-//        mainService.setNumberTimes($scope.numberTimes);
-//
-//    };
-//$scope.numberTimes = mainService.getNumberTimes();
+
 
 });

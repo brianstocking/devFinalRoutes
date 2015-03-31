@@ -10,10 +10,13 @@ app.controller('dataCtrl', function($scope, $firebase, loginService ){
 
     $scope.data = sync.$asArray();
 
+
+
+
     //console.log($scope.data)
 
     $scope.showData = false;
-    $scope.toggleData = function(index){
+    $scope.toggleData = function(){
         $scope.showData = !$scope.showData;
     };
 

@@ -23,23 +23,7 @@ html, body{
     -moz-appearance:none;
     appearance:none;
 }
-.not-good{background-image:url(images/notgood.png);
-    height: 120px;
-    width: 120px;
-}
-.ok{background-image:url(images/ok.png);
-    height: 120px;
-    width: 120px;
-}
 
-.good{background: url(images/good.png);
-    height: 120px;
-    width: 120px;
-}
-.great{background: url(images/great.png);
-    height: 120px;
-    width: 120px;
-}
 
 
 .the-faces input:active + .faces{opacity: .9;}
@@ -310,6 +294,47 @@ input[type=range]::-ms-fill-lower {
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 25px;
+}
+.lastWeek{
+    text-align: center;
+    width: 100px;
+    background: #236B7F;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 20px;
+}
+.not-goods {
+    background-image: url(images/notgood.png);
+    background-size: 100% 100%;
+    height: 120px;
+    width: 120px;
+    border-radius: 90px;
+    background-color: #DEF8FF;
+}
+.ok {
+    background-image: url(images/ok.png);
+    background-size: 100% 100%;
+    height: 120px;
+    width: 120px;
+    border-radius: 90px;
+    background-color: #DEF8FF;
+}
+.good {
+    background-image:url(images/good.png);
+    background-size: 100% 100%;
+    height: 120px;
+    width: 120px;
+    border-radius: 90px;
+    background-color: #DEF8FF;
+}
+.great {
+    background: url(images/great.png);
+    background-size: 100% 100%;
+    height: 120px;
+    width: 120px;
+    border-radius: 90px;
+    background-color: #DEF8FF;
 }
 
 @media only screen and (max-device-width: 430px){

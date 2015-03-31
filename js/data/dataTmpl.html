@@ -3,13 +3,13 @@
     <div class="dataContain">
 <button class="pageLink dataLink"><a class="submitLink" href="/#/charts">Chart</a></button>
             <div ng-repeat="(index, item) in data">
-                <h2  class="dataDate" ng-click="toggleData(index)">{{item.$id}}</h2>
+                <h2  class="dataDate" ng-click="toggleData(i.id)">{{item.$id}}</h2>
                     <div ng-show="showData" id="{{i.id}}">
                         <p class="dataSub">The number of times you went was {{item.times.times}}</p>
                        <p  class="dataSub" ng-repeat="c in item.consistency"> Your movement {{$index + 1}} consistency was a {{c.value}}</p>
                         <p class="dataSub">Your stomach ranking was a {{item.stomach.stomach}}</p>
                     </div>
         </div>
-        <h2 ng-show="!showData" ng-click="toggleData(index)">{{item.$id}}</h2>
+        <h2 ng-show="!showData" ng-click="toggleData(i.id)" id="{{i.id}}">{{item.$id}}</h2>
     </div>
 </div>
