@@ -267,7 +267,6 @@ input[type=range]::-ms-fill-lower {
 }
 
 .dataLink{
-    margin: 0 33%;
 
 }
 
@@ -287,13 +286,15 @@ input[type=range]::-ms-fill-lower {
 
 .pageLink{
     text-align: center;
-    width: 100px;
+    width: 200px;
     margin-top: 20px;
-    margin-left: 125px;
     background: #236B7F;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 25px;
+}
+.pageLinks{
+    margin: 0 auto;
 }
 .lastWeek{
     text-align: center;
