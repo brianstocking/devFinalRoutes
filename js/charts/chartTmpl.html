@@ -1,8 +1,23 @@
 <button class="pageLink"><a class="submitLink" href="/#/data">Data</a></button>
 
-
 <div ng-controller="chartCtrl">
+    <div ng-show="!showChart">
+        <button class="lastWeek" ng-click="toggleChart()">Hide Last 7 Days</button>
 
+        <div
+                data-ac-chart="'bar'"
+                data-ac-data="data"
+                data-ac-config="config"
+                class="chart">
+        </div>
+
+    </div>
+    <button class="lastWeek" ng-show="showChart" ng-click="toggleChart()">Show Last 7 Lays</button>
+</div>
+    <br/>
+<div ng-controller="chartCtrlTwo">
+<div ng-show="showChart">
+<button class="lastWeek" ng-click="toggleChart()">Hide Previous Week</button>
 
     <div
             data-ac-chart="'bar'"
@@ -11,4 +26,6 @@
             class="chart">
     </div>
 
+</div>
+    <button class="lastWeek" ng-show="!showChart" ng-click="toggleChart()">Show Previous Week</button>
 </div>
