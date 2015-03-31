@@ -1,15 +1,15 @@
+
 <div ng-controller="dataCtrl">
     <div class="dataContain">
-        <div ng-repeat="item in data">
-            <h2>{{item.$id}}</h2>
-            <h4>Times</h4>
-                <p class="dataSub">the number of times went was {{item.times.times}}</p>
-            <h4>Consistency</h4>
-               <p  class="dataSub" ng-repeat="c in item.consistency"> movement consistency was {{c.value}}</p>
-            <h4>Stomach</h4>
-                <p class="dataSub">your stomach ranking was {{item.stomach.stomach}}</p>
-
-
+<button class="pageLink dataLink"><a class="submitLink" href="/#/charts">Chart</a></button>
+            <div ng-repeat="(index, item) in data">
+                <h2  class="dataDate" ng-click="toggleData(index)">{{item.$id}}</h2>
+                    <div ng-show="showData" id="{{i.id}}">
+                        <p class="dataSub">The number of times you went was {{item.times.times}}</p>
+                       <p  class="dataSub" ng-repeat="c in item.consistency"> Your movement {{$index + 1}} consistency was a {{c.value}}</p>
+                        <p class="dataSub">Your stomach ranking was a {{item.stomach.stomach}}</p>
+                    </div>
         </div>
+        <h2 ng-show="!showData" ng-click="toggleData(index)">{{item.$id}}</h2>
     </div>
 </div>

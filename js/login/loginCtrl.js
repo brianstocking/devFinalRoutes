@@ -6,7 +6,8 @@ app.controller('loginCtrl', function($scope, $rootScope, loginService) {
     $scope.toggleRegister = function(){
         $scope.showRegister = !$scope.showRegister;
     };
-   $scope.user = loginService.user;
+
+    $scope.user = loginService.user;
     loginService.username = $scope.username
     $scope.createUser = function() {
 

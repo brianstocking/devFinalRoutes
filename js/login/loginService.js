@@ -24,9 +24,9 @@ app.service('loginService', function ($firebase) {
             password: user.password,
         }, function (error, userData) {
             if (error) {
-                console.log("Error creating user:", error);
+                console.log("Error creating user:");
             } else {
-                console.log("Successfully created user account with uid:", userData.uid);
+                console.log("Successfully created user account with uid:");
                 //addNewUsertoFB({email: user.name});
             }
 
@@ -40,17 +40,17 @@ app.service('loginService', function ($firebase) {
             password: user.password,
         }, function (error, authData) {
             if (error) {
-                console.log("Login Failed!", error);
+                alert("Invalid email or password", error);
             } else {
                 myUser = user.email;
                 location.hash = '#/pageOne';
-                console.log("Authenticated successfully with payload:", authData);
+                //console.log("Authenticated successfully with payload:", authData);
             }
         });
     };
 
     this.getUser = function () {
-        console.log(ref.getAuth());
+        //console.log(ref.getAuth());
         return FBEmail(ref.getAuth().password.email);
     };
 
@@ -58,10 +58,10 @@ app.service('loginService', function ($firebase) {
         var authData = ref.getAuth();
         if (authData){
             //console.log(authData);
-            console.log('auth user id ' + authData.uid);
+            //console.log('auth user id ' + authData.uid);
             return true
         }
-        console.log('not logged in');
+        //console.log('not logged in');
         return false
     }
 

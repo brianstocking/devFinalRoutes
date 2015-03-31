@@ -114,11 +114,10 @@ app.controller('chartCtrl', function($scope, $firebase, loginService){
     $scope.chartType = 'bar';
 
     $scope.config = {
-        labels: false,
-        title: "iPoop",
+        labels: true,
         legend: {
             display: true,
-            position: 'right'
+            position: 'left'
         },
         innerRadius: 0
     };
